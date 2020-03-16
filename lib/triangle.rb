@@ -8,6 +8,13 @@ class Triangle
     @side_c = c
   end
 
-  def kind(a, b, c)
+  def kind
+    if((a == b) && (b == c) && (c == a))
+      :equilateral
+    elsif((a == b) || (b == c) || (c == a))
+      :isosceles
+    else
+      :scalene
+    end
   end
 end
