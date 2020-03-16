@@ -7,4 +7,7 @@ class Triangle
     @side_b = b
     @side_c = c
   end
+
+  def kind(a, b, c)
+  end
 end
